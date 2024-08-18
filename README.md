@@ -28,18 +28,16 @@ A simple calendar application built with React that allows users to manage event
    cd calendar-app
 ```
 
-3. Navigate to the project directory:
-  ```bash
-  cd calendar-app
-```
-4. Install the dependencies:
+3. Install the dependencies:
   ```bash
   npm install
 ```
-5. Start the development server:
+
+4. Start the development server:
   ```bash
   npm start
 ```
+
 5. Open your browser and navigate to http://localhost:5173/
 
 ## Usage
