@@ -1,0 +1,110 @@
+.custom-calendar {
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.calendar-day {
+    padding: 10px;
+    border: 1px solid #ccc; 
+    text-align: center;
+}
+
+.events {
+    margin-top: 20px;
+}
+
+.event-item {
+    padding: 10px;
+    border: 1px solid #007bff; 
+    margin: 5px 0;
+    border-radius: 5px; 
+}
+
+.event-button {
+    padding: 10px 15px;
+    background-color: #007bff; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+ .custom-calendar .current-day {
+    background-color: #28a745 !important; 
+    font-weight: bold; 
+  }
+  .custom-calendar .sunday {
+    color: red;
+  }
+  
+  .custom-calendar .first-of-month {
+    font-weight: bold;
+  }
+
+@media screen and (max-width: 768px) {
+    .custom-calendar {
+        width: 100%; 
+        font-size: 14px;
+    }
+
+    .calendar-day {
+        padding: 5px; 
+        font-size: 12px; 
+    }
+
+    .events {
+        margin-top: 15px; 
+    }
+
+    .event-item {
+        padding: 8px; 
+        font-size: 12px; 
+    }
+
+    .event-button {
+        width: 100%; 
+        padding: 10px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .custom-calendar {
+        font-size: 12px;
+    }
+
+    .calendar-day {
+        padding: 3px; 
+    }
+
+    .event-item {
+        font-size: 10px; 
+    }
+}
+
+.event-button {
+    position: relative; 
+}
+
+.tooltip {
+    visibility: hidden; 
+    width: 60px; 
+    background-color: black; 
+    color: #fff; 
+    text-align: center;
+    border-radius: 5px; 
+    padding: 5px; 
+    position: absolute; 
+    z-index: 1; 
+    bottom: 125%; 
+    left: 50%; 
+    margin-left: -30px; 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+}
+
+.event-button:hover .tooltip {
+    visibility: visible; 
+    opacity: 1; 
+}
